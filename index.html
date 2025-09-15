@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xyraa4Sx Profile</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b0c2a;
+      color: white;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      width: 200%;
+      height: 200%;
+      background: url("https://www.transparenttextures.com/patterns/stardust.png");
+      animation: stars 60s linear infinite;
+    }
+    @keyframes stars {
+      from {transform: translate(0,0);}
+      to {transform: translate(-200px,-200px);}
+    }
+
+    .container {
+      position: relative;
+      z-index: 2;
+      padding: 50px 20px;
+    }
+
+    /* صورة البروفايل */
+    .avatar {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 3px solid #7d5fff;
+      margin: 20px auto;
+      display: block;
+      object-fit: cover;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: #9d79ff;
+    }
+
+    p {
+      max-width: 400px;
+      margin: 10px auto 30px;
+      line-height: 1.6;
+      font-size: 15px;
+    }
+
+    /* الأزرار */
+    .btn {
+      display: block;
+      margin: 10px auto;
+      padding: 14px;
+      width: 250px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      background: #1c1f3a;
+      color: white;
+      transition: 0.3s;
+      border: 1px solid #555;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #7d5fff;
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 12px;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- صورة البروفايل (انت حط ملف اسمه avatar.jpg في نفس الفولدر) -->
+    <img src="avatar.jpg" alt="Avatar" class="avatar">
+    
+    <h1>Xyraa4YouuSx</h1>
+
+    <p>
+      Selamat datang di ruang kosong dan Mimpi Tanpa Batas,
+      Tidak Ada Yang Mustahil Di Dunia Ini,
+      Jadi Berusahalah Semampumu Dan Sekuat Dirimu.
+    </p>
+
+    <!-- أزرار مع صوت -->
+    <button class="btn" onclick="playSound()">📩 Contact Telegram</button>
+    <button class="btn" onclick="playSound()">☁ Channel WhatsApp</button>
+    <button class="btn" onclick="playSound()">⭐ Channel Telegram</button>
+    <button class="btn" onclick="playSound()">🛡 Klz Xyraa4Sx Anonymouz?</button>
+
+    <!-- مشغل Spotify -->
+    <iframe style="border-radius:12px; margin-top:20px;"
+      src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M?utm_source=generator"
+      width="300" height="380" frameborder="0"
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+    </iframe>
+  </div>
+
+  <footer>© 2025 Xyraa4Sx Anonymous. All rights reserved.</footer>
+
+  <!-- الصوت -->
+  <audio id="btnSound" src="click.mp3"></audio>
+
+  <script>
+    function playSound() {
+      var sound = document.getElementById("btnSound");
+      sound.currentTime = 0; // يبدأ من الأول كل مرة
+      sound.play();
+    }
+  </script>
+</body>
+</html>
