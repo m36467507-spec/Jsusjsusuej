@@ -3,15 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Xyraa4Sx Profile</title>
+  <title>FLIXUWX</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0b0c2a;
+      font-family: "Poppins", Arial, sans-serif;
+      background: linear-gradient(-45deg, #0b0c2a, #1c1f3a, #3d2c8d, #7d5fff);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
       color: white;
       text-align: center;
       overflow-x: hidden;
+    }
+
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
     }
 
     body::before {
@@ -21,16 +29,30 @@
       height: 200%;
       background: url("https://www.transparenttextures.com/patterns/stardust.png");
       animation: stars 60s linear infinite;
+      opacity: 0.4;
+      z-index: 0;
     }
     @keyframes stars {
       from {transform: translate(0,0);}
-      to {transform: translate(-200px,-200px);}
+      to {transform: translate(-300px,-300px);}
     }
 
     .container {
       position: relative;
       z-index: 2;
       padding: 50px 20px;
+      max-width: 600px;
+      margin: auto;
+      background: rgba(20,20,40,0.5);
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 25px rgba(125,95,255,0.3);
+      animation: fadeIn 1.5s ease;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(40px);}
+      to {opacity: 1; transform: translateY(0);}
     }
 
     /* صورة البروفايل */
@@ -38,63 +60,78 @@
       width: 150px;
       height: 150px;
       border-radius: 50%;
-      border: 3px solid #7d5fff;
+      border: 4px solid #7d5fff;
       margin: 20px auto;
       display: block;
       object-fit: cover;
+      box-shadow: 0 0 25px #7d5fff;
+      transition: 0.3s;
+    }
+    .avatar:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 35px #a38bff;
     }
 
     h1 {
-      font-size: 28px;
+      font-size: 32px;
       margin-bottom: 10px;
-      color: #9d79ff;
+      color: #bbaaff;
+      text-shadow: 0 0 10px #7d5fff, 0 0 20px #7d5fff;
+      animation: glowText 2s ease-in-out infinite alternate;
+    }
+    @keyframes glowText {
+      from {text-shadow: 0 0 10px #7d5fff;}
+      to {text-shadow: 0 0 20px #fff;}
     }
 
     p {
-      max-width: 400px;
-      margin: 10px auto 30px;
-      line-height: 1.6;
-      font-size: 15px;
+      max-width: 420px;
+      margin: 15px auto 30px;
+      line-height: 1.7;
+      font-size: 16px;
+      opacity: 0.85;
     }
 
     /* الأزرار */
     .btn {
       display: block;
-      margin: 10px auto;
+      margin: 12px auto;
       padding: 14px;
-      width: 250px;
-      border-radius: 12px;
+      width: 260px;
+      border-radius: 14px;
       text-decoration: none;
       font-weight: bold;
       background: #1c1f3a;
       color: white;
       transition: 0.3s;
-      border: 1px solid #555;
+      border: 1px solid #7d5fff;
       cursor: pointer;
+      box-shadow: 0 0 15px rgba(125,95,255,0.3);
     }
     .btn:hover {
       background: #7d5fff;
+      box-shadow: 0 0 25px #7d5fff, 0 0 40px #a38bff;
+      transform: scale(1.05);
     }
 
     footer {
       margin-top: 50px;
       font-size: 12px;
-      opacity: 0.6;
+      opacity: 0.7;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <!-- صورة البروفايل (انت حط ملف اسمه avatar.jpg في نفس الفولدر) -->
+    <!-- صورة البروفايل -->
     <img src="avatar.jpg" alt="Avatar" class="avatar">
     
     <h1>Na FLIX from me Team Its H-X</h1>
 
     <p>
-      Welcome to the empty space and limitless dreams,
-Nothing is impossible in this world,
-So strive as much as you can and with all your strength.
-
+      Welcome to the empty space and limitless dreams,<br>
+      Nothing is impossible in this world,<br>
+      So strive as much as you can and with all your strength.
     </p>
 
     <!-- أزرار مع صوت -->
@@ -103,7 +140,7 @@ So strive as much as you can and with all your strength.
     <button class="btn" onclick="playSound()">⭐ Channel Telegram</button>
     <button class="btn" onclick="playSound()">🛡 Klz Xyraa4Sx Anonymouz?</button>
 
-    <!-- مشغل Spotify -->
+    <!-- Spotify -->
     <iframe style="border-radius:12px; margin-top:20px;"
       src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M?utm_source=generator"
       width="300" height="380" frameborder="0"
@@ -119,51 +156,7 @@ So strive as much as you can and with all your strength.
   <script>
     function playSound() {
       var sound = document.getElementById("btnSound");
-      sound.currentTime = 0; // يبدأ من الأول كل مرة
-      sound.play();
-    }
-  </script>
-</body>
-</html>      opacity: 0.6;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <!-- صورة البروفايل (انت حط ملف اسمه avatar.jpg في نفس الفولدر) -->
-    <img src="avatar.jpg" alt="Avatar" class="avatar">
-    
-    <h1>Xyraa4YouuSx</h1>
-
-    <p>
-      Selamat datang di ruang kosong dan Mimpi Tanpa Batas,
-      Tidak Ada Yang Mustahil Di Dunia Ini,
-      Jadi Berusahalah Semampumu Dan Sekuat Dirimu.
-    </p>
-
-    <!-- أزرار مع صوت -->
-    <button class="btn" onclick="playSound()">📩 Contact Telegram</button>
-    <button class="btn" onclick="playSound()">☁ Channel WhatsApp</button>
-    <button class="btn" onclick="playSound()">⭐ Channel Telegram</button>
-    <button class="btn" onclick="playSound()">🛡 Klz Xyraa4Sx Anonymouz?</button>
-
-    <!-- مشغل Spotify -->
-    <iframe style="border-radius:12px; margin-top:20px;"
-      src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M?utm_source=generator"
-      width="300" height="380" frameborder="0"
-      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
-    </iframe>
-  </div>
-
-  <footer>© 2025 Xyraa4Sx Anonymous. All rights reserved.</footer>
-
-  <!-- الصوت -->
-  <audio id="btnSound" src="click.mp3"></audio>
-
-  <script>
-    function playSound() {
-      var sound = document.getElementById("btnSound");
-      sound.currentTime = 0; // يبدأ من الأول كل مرة
+      sound.currentTime = 0; 
       sound.play();
     }
   </script>
